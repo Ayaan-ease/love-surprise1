@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #ffd6e8, #fff);
+  font-family: Poppins, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.screen {
+  display: none;
+  text-align: center;
+}
+
+.screen.active {
+  display: block;
+}
+
+.bear {
+  width: 160px;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  position: relative;
+  height: 120px;
+}
+
+button {
+  padding: 12px 26px;
+  font-size: 18px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#yesBtn {
+  background-color: #ff4d88;
+  color: white;
+}
+
+#noBtn {
+  background-color: #aaa;
+  color: white;
+  position: absolute;
+}
+
+input {
+  padding: 12px;
+  width: 260px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+#hint {
+  margin-top: 10px;
+  color: #ff4d88;
+}
+
+/* Dancing bears */
+.dance img {
+  width: 160px;
+  margin: 10px;
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(-20px); }
+}
